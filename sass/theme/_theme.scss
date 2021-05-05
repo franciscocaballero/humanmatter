@@ -1,5 +1,122 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 $color-primary: #5045FF;
-$color-secondary: #5045FF;
+$color-secondary: #948DFF;
 $color-white: #fff;
+$color-black: #000;
 $color-gray: #F2F3F9;
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { ... }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) { ... }
+
+// Main HTML tempelates
+body {
+    background-color: $color-primary;
+}
+
+// Nav
+#main-nav {
+    background-color: $color-primary;
+
+    #main-menu {
+
+        li {
+            &.current-menu-item {
+                a {
+                    color: $color-secondary;
+                }
+            }
+
+            &:last-child {
+                @media (max-width: $lg) {
+                    border: none;
+                    border-radius: 0px;
+                }
+
+                border: 2px solid $color-white;
+                border-radius: 150px;
+
+                &:hover {
+                    @media (max-width: $lg) {
+                        background-color: $color-primary;
+                    }
+
+                    background-color: $color-white;
+
+                    a {
+                        @media (max-width: $lg) {
+                            color: $color-white;
+                        }
+
+                        color: $color-secondary;
+                    }
+
+                }
+            }
+
+            padding-left: 20px;
+            padding-right: 20px;
+
+            a {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+// Hero section 
+.hero-section {
+    height: 2300px;
+    // padding-top: 200px;
+
+    .content-holder {
+        padding-top: 100px;
+        height: 1800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        h1 {
+            text-align: center;
+            color: $color-white;
+            font-size: 70px;
+            font-weight: bold;
+            width: 1200px;
+
+        }
+
+        .img-container {
+            height: 100%;
+            width: 1200px;
+
+        }
+
+        .paragraph-main {
+            color: $color-secondary;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+        }
+    }
+}
