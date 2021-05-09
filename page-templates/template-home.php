@@ -18,11 +18,11 @@ if ( is_front_page() ) {
 }
 ?>
 
+
 <div class="hero-section">
 
 	<div class="container">
 
-		<!-- <div class="col-lg-8"> -->
 		<div class="content-holder">
 
 			<h1 class="heading-main heading-main--white text-center">
@@ -59,25 +59,89 @@ if ( is_front_page() ) {
 			<a class='btn-secondary btn-secondary--white layout-center'>Learn More</a>
 		</div>
 	</div>
-
 </div>
 
 <div class="section-work">
 	<div class="container">
+		<div class="row bottom-margin text-left">
+			<h1 class="heading-main heading-main--black">Check out our most<br> recent work </h1>
+			<h2 class="heading-secondary">Read our insights and ideas about design and technology of modern
+				times.
+			</h2>
+		</div>
 
-		<h1 class="heading-main heading-main--black">Check out our most recent work </h1>
-		<h2 class="heading-secondary">Read our insights and ideas about design and technology of modern times.
-		</h2>
-		<div class="info-card-work">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/brew.png" alt="logo">
-			<p class="paragraph-card left"><a href="#" class="btn-secondary btn-secondary--black">Waterend Brewery</a> -
-				Discover by Teachable — Helping 100,000 creators to share their knowledge.</p>
+		<div class="row">
+			<div class="info-card info-card--work">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/project3.png" alt="logo">
+				<p class="paragraph-card left"><a href="#" class="btn-secondary btn-secondary--black">Waterend
+						Brewery</a> -
+					Discover by Teachable — Helping 100,000 creators to share their knowledge.</p>
+			</div>
+		</div>
+
+		<div class="row bottom-margin">
+			<div class="col info-card info-card--work">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/project2.png" alt="logo">
+				<p class="paragraph-card left"><a href="#" class="btn-secondary btn-secondary--black">Waterend
+						Brewery</a> -
+					Discover by Teachable — Helping 100,000 creators to share their knowledge.</p>
+			</div>
+
+			<div class="col info-card info-card--work">
+
+				<img src="<?php echo get_template_directory_uri(); ?>/img/project.png" alt="logo">
+				<p class="paragraph-card left"><a href="#" class="btn-secondary btn-secondary--black">Waterend
+						Brewery</a> -
+					Discover by Teachable — Helping 100,000 creators to share their knowledge.</p>
+
+			</div>
+		</div>
+		<div class="row">
+			<a class='btn-secondary btn-secondary--black layout-center'>View All</a>
 		</div>
 	</div>
 </div>
 
+<div class="section-blog">
+	<div class="container">
 
+		<div class="row bottom-margin text-left">
+			<h1 class="heading-main heading-main--black">Latest stories</h1>
+			<h2 class="heading-secondary heading-secondary--blue">
+				Read our insights and ideas about design andtechnology of moderntimes.
+			</h2>
+		</div>
+
+		<div class="row bottom-margin">
+			<div class="col info-card info-card--blog">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/project.png" alt="logo">
+				<p class="paragraph-card left"><a href="#" class="btn-secondary btn-secondary--black">
+						WaterendBrewery</a> - Discover by Teachable — Helping 100,000 creators to share their knowledge.
+				</p>
+			</div>
+			<div class="col info-card info-card--blog">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/project.png" alt="logo">
+				<p class="paragraph-card left"><a href="#" class="btn-secondary btn-secondary--black">
+						WaterendBrewery</a> - Discover by Teachable — Helping 100,000 creators to share their knowledge.
+				</p>
+			</div>
+			<div class="col info-card info-card--blog">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/project.png" alt="logo">
+				<p class="paragraph-card left"><a href="#" class="btn-secondary btn-secondary--black">
+						WaterendBrewery</a> - Discover by Teachable — Helping 100,000 creators to share their knowledge.
+				</p>
+				<button class='btn-main'>View All</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<a class='btn-secondary btn-secondary--black layout-center'>View All</a>
+		</div>
+
+	</div>
 </div>
+</div>
+
 
 <?php
 get_footer();
