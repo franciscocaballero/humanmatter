@@ -41,7 +41,7 @@ if ( is_front_page() ) {
 				<li><img src="<?php echo get_template_directory_uri(); ?>/img/woo.png" alt="logo">
 				</li>
 			</ul>
-			<p class="paragraph-main center">
+			<p class="paragraph-main text-center">
 				Our clients are the companies and startups who make the world go round – they treat diseases, move
 				parcels, insure cars, process payments, create jobs, rent homes and publish news.Vast and complex
 				businesses like these need digital experiences that are just as people-friendly as they are robust and
@@ -63,7 +63,7 @@ if ( is_front_page() ) {
 
 <div class="section-work">
 	<div class="container">
-		<div class="row bottom-margin text-left">
+		<div class="bottom-margin text-left">
 			<h1 class="heading-main heading-main--black">Check out our most<br> recent work </h1>
 			<h2 class="heading-secondary">Read our insights and ideas about design and technology of modern
 				times.
@@ -80,14 +80,14 @@ if ( is_front_page() ) {
 		</div>
 
 		<div class="row bottom-margin">
-			<div class="col info-card info-card--work">
+			<div class="col-lg-6  info-card info-card--work">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/project2.png" alt="logo">
 				<p class="paragraph-card left"><a href="#" class="btn-secondary btn-secondary--black">Waterend
 						Brewery</a> -
 					Discover by Teachable — Helping 100,000 creators to share their knowledge.</p>
 			</div>
 
-			<div class="col info-card info-card--work">
+			<div class="col-lg-6  info-card info-card--work">
 
 				<img src="<?php echo get_template_directory_uri(); ?>/img/project.png" alt="logo">
 				<p class="paragraph-card left"><a href="#" class="btn-secondary btn-secondary--black">Waterend
@@ -97,7 +97,7 @@ if ( is_front_page() ) {
 			</div>
 		</div>
 		<div class="row">
-			<a class='btn-secondary btn-secondary--black layout-center'>View All</a>
+			<a class='btn-secondary btn-secondary--black layout-center bottom-margin'>View All</a>
 		</div>
 	</div>
 </div>
@@ -105,40 +105,43 @@ if ( is_front_page() ) {
 <div class="section-blog">
 	<div class="container">
 
-		<div class="row bottom-margin text-left">
-			<h1 class="heading-main heading-main--black">Latest stories</h1>
-			<h2 class="heading-secondary heading-secondary--blue">
-				Read our insights and ideas about design andtechnology of moderntimes.
+		<div class="bottom-margin text-left">
+			<h1 class="heading-main heading-main--blue">Latest stories</h1>
+			<h2 class="heading-secondary heading-secondary--black">
+				Read our insights and ideas about design and technology of modern times.
 			</h2>
+		</div>
+		<div class="row bottom-margin">
+			<div class="col-12">
+
+				<div class="info-card-blog">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/a1.png" alt="logo">
+					<h2 class="heading-secondary heading-secondary--black">The world’s fastest tablet browser.10</h2>
+					<a href="#">Read Post →</a>
+				</div>
+			</div>
 		</div>
 
 		<div class="row bottom-margin">
-			<div class="col info-card info-card--blog">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/project.png" alt="logo">
-				<p class="paragraph-card left"><a href="#" class="btn-secondary btn-secondary--black">
-						WaterendBrewery</a> - Discover by Teachable — Helping 100,000 creators to share their knowledge.
-				</p>
+			<div class="col-12 col-lg-6 ">
+			<div class="info-card-blog">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/a1.png" alt="logo">
+					<h2 class="heading-secondary heading-secondary--black">The world’s fastest tablet browser.10</h2>
+					<a href="#">Read Post →</a>
+				</div>
 			</div>
-			<div class="col info-card info-card--blog">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/project.png" alt="logo">
-				<p class="paragraph-card left"><a href="#" class="btn-secondary btn-secondary--black">
-						WaterendBrewery</a> - Discover by Teachable — Helping 100,000 creators to share their knowledge.
-				</p>
-			</div>
-			<div class="col info-card info-card--blog">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/project.png" alt="logo">
-				<p class="paragraph-card left"><a href="#" class="btn-secondary btn-secondary--black">
-						WaterendBrewery</a> - Discover by Teachable — Helping 100,000 creators to share their knowledge.
-				</p>
-				<button class='btn-main'>View All</button>
+
+			<div class="col-12 col-lg-6">
+				<div class="info-card-blog">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/a3.png" alt="logo">
+					<h2 class="heading-secondary heading-secondary--black">The world’s fastest tablet browser.10</h2>
+					<a href="#">Read Post →</a>
+				</div>
 			</div>
 		</div>
-
 		<div class="row">
-			<a class='btn-secondary btn-secondary--black layout-center'>View All</a>
+			<a class='btn-secondary btn-secondary--black layout-center bottom-margin'>View All</a>
 		</div>
-
-	</div>
 </div>
 </div>
 
