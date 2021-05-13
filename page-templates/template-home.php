@@ -140,7 +140,7 @@ if ( is_front_page() ) {
 			</div>
 		</div>
 		<div class="row">
-			<a class='btn-secondary btn-secondary--black layout-center bottom-margin'>View All</a>
+			<a class='btn-link layout-center bottom-margin'>View All →</a>
 		</div>
 </div>
 </div>
