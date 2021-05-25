@@ -17,6 +17,25 @@ if ( is_front_page() ) {
 	get_template_part( 'global-templates/hero' );
 }
 ?>
+<div class="home">
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-8">
+
+				<h1 class="heading-main heading-main--black text-left">
+					Full-service creative agency specialized in crafting human 
+				<p class="paragraph-main text-left">
+					Our clients are the companies and startups who make the world go round – they treat diseases, move
+					parcels, insure cars, process payments, create jobs, rent.
+				</p>
+				<button class="btn-main layout-center">Contact us</buttton>
+
+			</div>
+		</div>
+	</div>
+</div>
 
 
 <div class="hero-section">
@@ -56,7 +75,8 @@ if ( is_front_page() ) {
 				Through challenging core assumptions, we shape the products and services that improve the lives of
 				thousands every single day.
 			</p>
-			<a class='btn-secondary btn-secondary--white layout-center'>Learn More</a>
+			<button class="btn-main layout-center">Contact us</buttton>
+
 		</div>
 	</div>
 </div>
@@ -124,8 +144,8 @@ if ( is_front_page() ) {
 
 		<div class="row bottom-margin">
 			<div class="col-12 col-lg-6 ">
-			<div class="info-card-blog">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/a1.png" alt="logo">
+				<div class="info-card-blog">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/a1.png" alt="logo">
 					<h2 class="heading-secondary heading-secondary--black">The world’s fastest tablet browser.10</h2>
 					<a href="#">Read Post →</a>
 				</div>
@@ -133,16 +153,16 @@ if ( is_front_page() ) {
 
 			<div class="col-12 col-lg-6">
 				<div class="info-card-blog">
-				<img src="<?php echo get_template_directory_uri(); ?>/img/a3.png" alt="logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/a3.png" alt="logo">
 					<h2 class="heading-secondary heading-secondary--black">The world’s fastest tablet browser.10</h2>
 					<a href="#">Read Post →</a>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<a class='btn-link layout-center bottom-margin'>View All →</a>
+            <button class="btn-main layout-center">Contact us</buttton>
 		</div>
-</div>
+	</div>
 </div>
 
 
