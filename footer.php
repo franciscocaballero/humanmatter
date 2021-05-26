@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         </div>
     </footer> -->
     <footer>
-        <div class="container">
+        <!-- <div class="container">
 
             <h1 class="heading-main heading-main--black bottom-margin text-center">
                 Let’s talk about <br>your next project
@@ -38,7 +38,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <button class="btn-main layout-center">Contact us</buttton>
             </div>
         </div>
-</footer>
+</footer> -->
 <div class="footer-banner">
             <div class="container">
                 <p>Terms of Service - Privacy Policy</p>

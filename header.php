@@ -14,6 +14,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,30 +23,33 @@ $container = get_theme_mod( 'understrap_container_type' );
 </head>
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
-<?php do_action( 'wp_body_open' ); ?>
-<div class="site" id="page">
+	<?php do_action( 'wp_body_open' ); ?>
+	<div class="site" id="page">
 
-	<!-- ******************* The Navbar Area ******************* -->
-	<div id="wrapper-navbar">
+		<!-- ******************* The Navbar Area ******************* -->
+		<div id="wrapper-navbar">
 
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
+			<a class="skip-link sr-only sr-only-focusable"
+				href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav id="main-nav" class="navbar navbar-expand-lg navbar-dark " aria-labelledby="main-nav-label">
-
-	
-			<div class="container">
-		<div class="col-sm-5">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo">
-		</div>
+			<nav id="main-nav" class="navbar navbar-expand-lg navbar-dark " aria-labelledby="main-nav-label">
 
 
+				<div class="container col-10">
+					<div class="col">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/Logo.png" alt="logo">
+					</div>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+				
 
-				<!-- The WordPress Menu goes here -->
-				<?php
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown" aria-expanded="false"
+						aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<!-- The WordPress Menu goes here -->
+					<?php
 				wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
@@ -60,9 +64,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 				);
 				?>
 
-			</div><!-- .container -->
+				</div><!-- .container -->
 
 
-		</nav><!-- .site-navigation -->
+			</nav><!-- .site-navigation -->
 
-	</div><!-- #wrapper-navbar end -->
+		</div><!-- #wrapper-navbar end -->
