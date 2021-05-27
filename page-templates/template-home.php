@@ -23,7 +23,8 @@ if ( is_front_page() ) {
 		<div class="row align-items-center">
 			<div class="col-lg-5 col-md-12">
 				<h1 class="padding-bottom">
-					Human centered digital experiences.
+					Human centered <br>
+					digital experiences.
 				</h1>
 				<p class="padding-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
 					pellentesque ullamcorper orci in morbi. Semper tellus lacus sodales lectus turpis mattis

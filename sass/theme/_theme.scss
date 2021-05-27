@@ -189,6 +189,13 @@ p {
     }
 }
 
+
+.navbar-toggler {
+    background-color: $color-grey;
+    border: none;
+}
+
+
 .section-home {
     display: flex;
     min-height: 90vh;
@@ -200,6 +207,15 @@ p {
         img {
             min-height: 80vh;
             min-width: 100vw;
+            margin-top: 100px;
+
+        }
+    }
+
+    @media(max-width: $sm) {
+        img {
+            min-height: 40vh;
+            min-width: 90vw;
             margin-top: 100px;
 
         }
