@@ -260,8 +260,8 @@ p {
 
         background: linear-gradient(to bottom, rgba(247, 159, 180, 0.904) 0%, rgba(234, 101, 159, 0.493) 59%, rgba(123, 148, 212, 0.65) 100%),
             url("../img/about-img.jpg") no-repeat;
-        background-position: cover;
-        height: 85vh;
+        background-size: 100% 100%;
+        height: 95vh;
 
         h1,
         p {
