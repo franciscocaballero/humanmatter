@@ -22,7 +22,7 @@ body {
     width: 100%;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: $color-white;
-    overflow-y: hidden;
+    overflow-x: hidden;
 
     @media(max-width: $lg) {
         h1 {
@@ -69,7 +69,7 @@ h4 {
 
 p {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 400;
     display: inline inline-block;
     color: $color-grey;
 }
@@ -142,6 +142,9 @@ p {
     margin-right: 30px;
 }
 
+.margin-bottom {
+    margin-bottom: 40px;
+}
 
 /* Navigation*/
 #main-nav {
@@ -220,4 +223,73 @@ p {
 
         }
     }
+}
+
+// .wrap {
+//     position: relative;
+//     height: auto;
+// }
+
+// .h1-about {
+//     position: absolute;
+//     display: block;
+//     width: 45%;
+//     height: 1em;
+//     margin: auto;
+//     text-align: left;
+//     top: 0;
+//     bottom: 400px;
+//     right: 1152px;
+// }
+
+// .p-about {
+//     position: absolute;
+//     display: block;
+//     width: 45%;
+//     height: 1em;
+//     margin: auto;
+//     text-align: left;
+//     top: 0;
+//     right: 1152px;
+//     bottom: 200px;
+//     line-height: 40px;
+// }
+
+.section-about {
+    @media (max-width: $lg) {
+
+        background: linear-gradient(to bottom, rgba(247, 159, 180, 0.904) 0%, rgba(234, 101, 159, 0.493) 59%, rgba(123, 148, 212, 0.65) 100%),
+            url("../img/about-img.jpg") no-repeat;
+        background-position: cover;
+        height: 85vh;
+
+        h1,
+        p {
+            color: $color-white
+        }
+
+        .pic-sec {
+            display: none;
+        }
+    }
+
+    display: flex;
+    min-height: 95vh;
+    min-width: 100vw;
+
+    p {
+        line-height: 40px;
+    }
+
+    .pic-sec {
+        background: linear-gradient(to bottom, rgba(247, 159, 180, 0.904) 0%, rgba(234, 101, 159, 0.493) 59%, rgba(123, 148, 212, 0.65) 100%),
+            url("../img/about-img.jpg") no-repeat;
+        background-size: cover;
+        clip-path: polygon(28% 0, 100% 0%, 100% 100%, 0% 100%);
+        background-position: top;
+        height: 95vh;
+        width: 50%;
+        z-index: -1;
+    }
+
 }
