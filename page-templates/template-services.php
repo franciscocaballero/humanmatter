@@ -17,38 +17,48 @@ if ( is_front_page() ) {
 	get_template_part( 'global-templates/hero' );
 }
 ?>
-
-<div class="wrapper" id="full-width-page-wrapper">
-
-	<div class="<?php echo esc_attr( $container ); ?>" id="content">
-
-		<div class="row">
-
-			<div class="col-md-12 content-area" id="primary">
-
-				<main class="site-main" id="main" role="main">
-
-					<?php
-					while ( have_posts() ) {
-						the_post();
-						get_template_part( 'loop-templates/content', 'page' );
-
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) {
-							comments_template();
-						}
-					}
-					?>
-
-				</main><!-- #main -->
-
-			</div><!-- #primary -->
-
-		</div><!-- .row end -->
-
-	</div><!-- #content -->
-
-</div><!-- #full-width-page-wrapper -->
+<section class="section-services align-items-center">
+	<div class="container col-10">
+		<div class="row ">
+			<div class="col-xl-12 margin-bottom">
+				<h1>Building the best global products</h1>
+				<h1> means offering the best services.</h1>
+			</div>
+			<div class="col-xl-3 col-lg-6">
+				<div class="services-card">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/web.png" alt="web">
+					<h4>Front-end Devolopemnt</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim et nulla ut euismod urna </p>
+					<button class="btn-sub">Contact →</button>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-6">
+				<div class="services-card">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/person.png" alt="web">
+					<h4>Human experince Design</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim et nulla ut euismod urna </p>
+					<button class="btn-sub">Contact →</button>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-6">
+				<div class="services-card">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/mobile.png" alt="web">
+					<h4>Mobile Development</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim et nulla ut euismod urna </p>
+					<button class="btn-sub">Contact →</button>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-6">
+				<div class="services-card">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/stack.png" alt="web">
+					<h4>Web Hosting</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim et nulla ut euismod urna </p>
+					<button class="btn-sub">Contact →</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 <?php
 get_footer();

@@ -17,13 +17,17 @@ if ( is_front_page() ) {
 }
 ?>
 
-<section class="section-product">
+<section class="section-product align-items-center">
     <div class="container col-10">
         <div class="row">
-            <div class="col-6">
+            <div class="col-xl-6 col-lg-12">
                 <h1>Natours →</h1>
                 <h1>Omnifood →</h1>
                 <h1>Nextour →</h1>
+            </div>
+            <div class="col-xl-6 col-lg-12">
+            <h1>Everjoy  →</h1>
+            <h1>Travely →</h1>
             </div>
         </div>
     </div>

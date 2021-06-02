@@ -18,37 +18,28 @@ if ( is_front_page() ) {
 }
 ?>
 
-<div class="wrapper" id="full-width-page-wrapper">
-
-	<div class="<?php echo esc_attr( $container ); ?>" id="content">
-
+<div class="section-contact align-items-center">
+	<div class="container col-10">
 		<div class="row">
+			<div class="col-xl-6 col-lg-12">
+				<h1 class="margin-bottom-lg">Say Hello</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque ullamcorper orci in
+					morbi. Semper tellus lacus sodales lectus turpis mattis. Habitasse turpis semper ut amet volutpat,
+					tortor, et. A duis justo et at nibh purus adipiscing duis.Lorem ipsum dolor sit
+				</p>
+			</div>
+			<div class="col-xl-6 col-lg-12">
+				<div class="contact-form">
+				<h2>Let's talk</h2>
+					<?php echo do_shortcode('[contact-form-7 id="56" title="Main Contact Form"]') ?>
+				</div>
 
-			<div class="col-md-12 content-area" id="primary">
-
-				<main class="site-main" id="main" role="main">
-
-					<?php
-					while ( have_posts() ) {
-						the_post();
-						get_template_part( 'loop-templates/content', 'page' );
-
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) {
-							comments_template();
-						}
-					}
-					?>
-
-				</main><!-- #main -->
-
-			</div><!-- #primary -->
-
-		</div><!-- .row end -->
-
-	</div><!-- #content -->
-
-</div><!-- #full-width-page-wrapper -->
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 
 <?php
 get_footer();

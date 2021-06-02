@@ -33,7 +33,6 @@ if ( is_front_page() ) {
 				</p>
 				<div class="btn-container">
 					<button class="btn-main">Contact →</button>
-					<!-- <button class="btn-main btn-main--color-transparent">Learn more →</button> -->
 				</div>
 			</div>
 			
